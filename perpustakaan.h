@@ -558,7 +558,7 @@ int hasiltahunbeda(int tahun1,int tahun2,int bulan1,int bulan2,int tgl1,int tgl2
 	}
 	
 	hasilnya = ((hasil_thn-hasil_bln)-tgl1)+tgl2;
-	return hasilnya
+	return hasilnya;
 }
 	
 	
