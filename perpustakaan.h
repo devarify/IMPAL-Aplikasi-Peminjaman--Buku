@@ -96,7 +96,7 @@ void peminjamanBuku(){
 	}else{
 		system("CLS");
 		peminjamanBuku();
-		ErrrorPeminjaman();
+		ErrorPeminjaman();
 	}
 
 }
@@ -117,7 +117,7 @@ void ErrorPeminjaman(){
 		peminjamanBuku();
 	}else{
 		system("CLS");
-		ErrrorPeminjaman();
+		ErrorPeminjaman();
 	}
 }
 
@@ -178,7 +178,7 @@ void ErrorMenu(){
 		Exit();
 	}else{
 		system("CLS");
-		ErrrorMenu();
+		ErrorMenu();
 	}
 }
 void Exit(){
@@ -224,7 +224,7 @@ void tampilMahasiswa(){
 		tampilMahasiswa();
 	}else{
 		system("CLS");
-		ErrrorPeminjaman();
+		ErrorPeminjaman();
 	}
 }
 
@@ -244,7 +244,7 @@ void ErrorMahasiswa(){
 		tampilMahasiswa();
 	}else{
 		system("CLS");
-		ErrrorMahasiswa();
+		ErrorMahasiswa();
 	}
 }
 /*==========================================3======================================*/
@@ -296,7 +296,7 @@ void ErrorInfoBuku(){
 		infoBuku();
 	}else{
 		system("CLS");
-		ErrrorInfoBuku();
+		ErrorInfoBuku();
 	}
 }
 
@@ -474,10 +474,10 @@ void pengembalian(){
 	printf("\n\n\t\t - KELAS	= %s",identitas[idSiswa-1].kelas);
 	printf("\n\t\t - TGL PINJAM	= %d - %d - d",identitas[idSiswa-1].peminjaman.tgl,identitas[idSiswa-1].peminjaman.bln,identitas[idSiswa-1].peminjaman.thn);
 
-	print("\n\n\t\t - KODE BUKU 1 = %d",identitas[idSiswa-1].kodeBuku1);
-	print("\n\t\t - KODE BUKU 2 = %d",identitas[idSiswa-1].kodeBuku2);
-	print("\n\t\t - KODE BUKU 3  = %d",identitas[idSiswa-1].kodeBuku3);
-	print("\n\t\t - JUMLAH HARI = %d",hari);
+	printf("\n\n\t\t - KODE BUKU 1 = %d",identitas[idSiswa-1].kodeBuku1);
+	printf("\n\t\t - KODE BUKU 2 = %d",identitas[idSiswa-1].kodeBuku2);
+	printf("\n\t\t - KODE BUKU 3  = %d",identitas[idSiswa-1].kodeBuku3);
+	printf("\n\t\t - JUMLAH HARI = %d",hari);
 
 	if(hari<=3){
 		printf("\n\t\t - DENDA ANDA = 0");
